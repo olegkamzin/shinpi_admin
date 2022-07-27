@@ -1,0 +1,23 @@
+<template>
+<sidebar-common/>
+<div class="wrapper">
+	<router-view></router-view>
+</div>
+</template>
+
+<script>
+import SidebarCommon from '@/components/common/SidebarCommon.vue'
+import MainPage from './pages/MainPage.vue'
+
+export default {
+	components: { SidebarCommon, MainPage }
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* { margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; box-sizing: border-box; }
+body { background: #F0F0F0; font-size: 14px; }
+a { color: #000; }
+svg { box-sizing: content-box; }
+.wrapper { margin: 0 0 0 200px; width: 100%; padding: 30px; }
+</style>
